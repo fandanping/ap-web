@@ -1,0 +1,45 @@
+html, body{
+  height: 100%;
+}
+body{
+  background-image:url("../images/bg.jpg");
+  background-attachment:fixed;
+  background-size: cover;
+}
+.page-register{
+  position: relative;
+  min-height: 500px;
+}
+.page-login{
+  position: relative;
+  min-height: 500px;
+}
+.page{
+  height: 100%;
+}
+.form-wrap{
+  width:360px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 7px;
+  padding: 20px 30px 15px 30px;
+  box-sizing: border-box;
+}
+.form-item .input-icon input{
+  padding-left: 33px;
+}
+.form-item i{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  z-index: 1;
+}
+.btn-submit{
+  width:100%;
+  float: right;
+}

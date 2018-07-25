@@ -4,8 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/index'
-Vue.config.productionTip = false
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import './assets/styles/styles.css'
+import 'font-awesome/css/font-awesome.css'
+import 'normalize.css/normalize.css'
 
+Vue.config.productionTip = false
+Vue.use(ElementUI)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
