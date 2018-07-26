@@ -34,13 +34,26 @@ let router = new Router({
       }
     },
     {
-      path: '/address/search/marking',
-      name: 'search',
+      path: '/address',
+      name: 'Address',
       component: AddressSearch,
       meta: {
-        title: '检索'
+        title: '地址标引',
+        requireAuth: true
       }
     }
   ]
+})
+router.beforeEach((to, from, next) => {
+  window.document.title = to.meta.title
+  let token = window.localStorage.getItem('token')
+  if (to.meta.requireAuth && !token) {
+    next({
+      path: '/login', query: {redirect: to.fullPath}
+    })
+  }
+  router.afterEach(() => {
+    window.scrollTo(0, 0)
+  })
 })
 export default router

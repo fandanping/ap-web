@@ -21,7 +21,7 @@ export default {
     }
   },
   actions: {
-    login ({commit}, {username, password}) {
+    login: ({commit}, {username, password}) => {
       return new Promise((resolve, reject) => {
         axios.post(MODULE_CONTEXT + '/login', {
           username,
