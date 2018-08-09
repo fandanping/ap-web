@@ -32,7 +32,7 @@
             <div class="banner">
                <el-carousel :interval="4000" type="card" height="200px">
                  <el-carousel-item v-for="item in imagelist" :key="item.index">
-                   <a :src="item.link"></a>
+                   <img :src="item.link">
                  </el-carousel-item>
                </el-carousel>
             </div>
