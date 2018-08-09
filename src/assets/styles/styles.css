@@ -1,6 +1,10 @@
 html, body{
   height: 100%;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 body{
   background-image:url("../images/bg.jpg");
   background-attachment:fixed;
@@ -53,4 +57,7 @@ img {
 a {
   text-decoration: none;
   color: #444;
+}
+*{
+  text-align: left;
 }
