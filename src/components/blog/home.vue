@@ -7,7 +7,7 @@
         <div class="main-warp">
           <el-col :span="15"><div class="grid-content">
             <div class="banner">
-               <el-carousel :interval="4000" type="card" height="200px">
+               <el-carousel :interval="4000" type="card" height="280px">
                  <el-carousel-item v-for="item in imagelist" :key="item.index">
                    <img :src="item.link">
                  </el-carousel-item>
@@ -48,9 +48,11 @@
             </el-pagination>
           </div></el-col>
           <el-col :span="9"><div class="grid-content bg-purple">
+            <EveryDay></EveryDay>
             <SideNews> </SideNews>
             <About> </About>
             <Tjlm> </Tjlm>
+            <Links> </Links>
           </div></el-col>
         </div>
       </el-row>
@@ -65,12 +67,16 @@ import Header from './../common/header.vue'
 import SideNews from './../common/sidenews.vue'
 import Tjlm from './../common/tjlm.vue'
 import About from './../common/about.vue'
+import Links from './../common/links.vue'
+import EveryDay from './../common/everyday.vue'
 export default {
   components: {
     Header,
     SideNews,
     About,
-    Tjlm
+    Tjlm,
+    Links,
+    EveryDay
   },
   data () {
     return {
@@ -97,9 +103,6 @@ export default {
 }
 </script>
 <style>
-  #app{
-    margin-top:0px;
-  }
   .main{
     font: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
     color: #555;
@@ -107,8 +110,8 @@ export default {
     width:100%;
   }
   .main .main-warp{
-     width: 1120px;
-     margin:0 auto;
+    width: 1120px;
+    margin:0 auto;
     margin-top:30px;
   }
   .el-carousel__item h3 {

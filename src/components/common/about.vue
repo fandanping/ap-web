@@ -2,7 +2,7 @@
   <div class="about">
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span>推荐栏目</span>
+        <span>关于本站</span>
       </div>
       <div>
         <el-collapse v-model="activeNames" >
@@ -43,6 +43,6 @@ export default {
     margin-top:20px;
   }
   .about .el-card__header{
-    background-color: lightskyblue;
+    background-color: #409EFF;
   }
 </style>

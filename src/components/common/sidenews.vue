@@ -74,6 +74,7 @@ export default {
     background-color: #fff;
     box-sizing: border-box;
     text-align: left;
+    margin-top: 20px;
   }
   .fenlei .card{
     margin: 10px 0px;

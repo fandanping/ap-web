@@ -24,6 +24,6 @@ export default {
     margin-top:20px;
   }
   .tjlm .el-card__header{
-    background-color: sandybrown;
+    background-color: #F56C6C;
   }
 </style>

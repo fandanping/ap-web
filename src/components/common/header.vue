@@ -14,12 +14,14 @@
           danping 个人blog
         </div>
         <div class="nav">
-          <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
-            <el-menu-item index="1">首页</el-menu-item>
-            <el-menu-item index="2" >关于我</el-menu-item>
-            <el-menu-item index="3" >技术分享</el-menu-item>
-            <el-menu-item index="4" >美学分享</el-menu-item>
-            <el-menu-item index="5" >慢生活</el-menu-item>
+          <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" router>
+            <el-menu-item index="/home">首页</el-menu-item>
+            <el-menu-item index="/aboutme" >关于我</el-menu-item>
+            <el-menu-item index="/tech" >技术分享</el-menu-item>
+            <el-menu-item index="/look" >美学分享</el-menu-item>
+            <el-menu-item index="/life" >慢生活</el-menu-item>
+            <el-menu-item index="/mood" >心情随笔</el-menu-item>
+            <el-menu-item index="/message" >在线留言</el-menu-item>
           </el-menu>
         </div>
       </div>
@@ -76,10 +78,10 @@ export default {
   .header-navigation .nav{
     float: left;
     height:60px;
-    margin-left:200px;
+    margin-left:100px;
   }
   .header-navigation .nav ul li {
-    padding-left:40px;
-    padding-right:40px;
+    padding-left:30px;
+    padding-right:30px;
   }
 </style>
