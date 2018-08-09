@@ -1,11 +1,9 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
-import user from './modules/address/user'
-import search from './modules/address/search'
+import user from './modules/user'
 Vue.use(Vuex)
 export default new Vuex.Store({
   modules: {
-    userModule: user,
-    addressModule: search
+    userModule: user
   }
 })

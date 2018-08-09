@@ -1,4 +1,4 @@
-import axios from '../../../config/axios'
+import axios from '../../config/axios'
 const MODULE_CONTEXT = '/user'
 export default {
   namespaced: true,

@@ -2,8 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from './../components/user/Login'
 import Register from './../components/user/Register'
-import AddressSearch from './../components/address/Search'
-
+import testElementUI from './../components/blog/ele.vue'
 Vue.use(Router)
 
 let router = new Router({
@@ -34,11 +33,11 @@ let router = new Router({
       }
     },
     {
-      path: '/address',
-      name: 'Address',
-      component: AddressSearch,
+      path: '/blog',
+      name: 'blog',
+      component: testElementUI,
       meta: {
-        title: '地址标引',
+        title: 'blog',
         requireAuth: true
       }
     }
