@@ -13,7 +13,7 @@
                  </el-carousel-item>
                </el-carousel>
             </div>
-            <div class="bloglist">
+            <div class="bloglist list">
               <ul>
                 <li v-for="item in bloglist" :key="item.index">
                   <i class="blogpic">
@@ -103,17 +103,6 @@ export default {
 }
 </script>
 <style>
-  .main{
-    font: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
-    color: #555;
-    background: #f1f1f1;
-    width:100%;
-  }
-  .main .main-warp{
-    width: 1120px;
-    margin:0 auto;
-    margin-top:30px;
-  }
   .el-carousel__item h3 {
     color: #475669;
     font-size: 14px;
@@ -127,13 +116,6 @@ export default {
 
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
-  }
-  .bloglist {
-    border: #ddd 1px solid;
-    overflow: hidden;
-    background: #fff;
-    margin-bottom: 15px;
-    text-align: left;
   }
   .bloglist ul {
     padding: 20px 20px 0 20px;
